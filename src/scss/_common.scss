@@ -1,0 +1,32 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.padding-ul {
+    li {
+        padding: 0 15px;
+    }
+}
+
+
+.display__none {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+a {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.contact {
+    transition: unset;
+    color: $primary !important;
+}

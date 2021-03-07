@@ -1,0 +1,27 @@
+// 
+// Bootstrap 5.0.0
+// 
+@import "./_bootstrap-5.0.0/bootstrap";
+
+// 
+// Variables
+// 
+@import "./variables";
+
+// 
+// Reset
+// 
+@import "./reset";
+
+
+// 
+// Common
+// 
+@import "./common";
+
+// 
+// Pages
+// 
+@import ".//pages/Navigation/navigation";
+@import "./pages/HomePage/homepage";
+@import "./pages/Footer/footer";
