@@ -1,0 +1,43 @@
+// ------------------------------------------------
+// FONTS
+// ------------------------------------------------
+
+@font-face {
+  
+  font-family: 'roboto';
+  src: url('#{$font-path}/Roboto-Regular.ttf'),
+       url('#{$font-path}/Roboto-Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+// @font-face {
+//   font-family: 'sarala-regular';
+//   src: url('#{$font-path}/Sarala/Sarala-Regular.woff2'),
+//        url('#{$font-path}/Sarala/Sarala-Regular.woff');
+//   font-weight: normal;
+//   font-style:  normal;
+// }
+
+// @font-face {
+//   font-family: 'sarala-bold';
+//   src: url('#{$font-path}/Sarala/Sarala-Bold.woff2'),
+//        url('#{$font-path}/Sarala/Sarala-Bold.woff');
+//   font-weight: normal;
+//   font-style:  normal;
+// }
+
+// @font-face {
+//   font-family: 'nunito-regular';
+//   src: url('#{$font-path}/Nunito-Sans/NunitoSans-Regular.woff2');
+//   font-weight: normal;
+//   font-style:  normal;
+// }
+
+// @font-face {
+//   font-family: 'nunito-bold';
+//   src: url('#{$font-path}/Nunito-Sans/NunitoSans-Bold.woff2');
+//   font-weight: normal;
+//   font-style:  normal;
+// }
+
