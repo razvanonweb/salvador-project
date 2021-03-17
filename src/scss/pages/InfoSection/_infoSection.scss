@@ -1,0 +1,38 @@
+.info__section {
+    background-color: $secondary-color;
+    position: relative;
+}
+
+.info__section-img {
+    opacity: 0.3;
+    height: 600px;
+    object-fit: cover;
+}
+
+.info__section-description {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    max-width: 1110px;
+}
+
+.info__section-title {
+    font-size: 20px;
+    margin-bottom: 23px;
+}
+
+.info__section-text {
+    font-size: 14px;
+    margin-bottom: 90px;
+    &:last-child() {
+        margin-bottom: 0;
+    }
+}
+
+.info__section-text span {
+    display: none;
+    @media screen and(min-width: 768px) {
+        display: inline;
+    }
+}

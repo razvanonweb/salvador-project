@@ -1,55 +1,99 @@
 .footer {
-    background-color: $secondary;
+
+    background-color: $secondary-color;
 }
 
 .footer__container {
+
     padding-top: 43px !important;
     padding-bottom: 21px !important;
-    .footer__container-logo {
-        color: $primary;
-        font-size: 29px;
-    }
-    p {
-        color: #ffffff;
+}
+
+.footer__container-logo {
+
+    color: $primary-color;
+    font-size: 29px;
+}
+
+.footer-text {
+
+    color: #ffffff;
+}
+
+.footer__list {
+
+    flex-flow: column;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+
+        flex-flow: row;
+        margin-bottom: unset;
     }
 }
 
-.footer__menu {
-    ul{
-        flex-flow: column;
-        margin-bottom: 20px;
-        @media screen and (min-width: 768px) {
-            flex-flow: row;
-            margin-bottom: unset;
-        }
-        li {
-            text-decoration: underline;
-            padding-left: 0;
-            @media screen and (min-width: 768px) {
-                padding: 0 15px;
-            }
-        }
-        li:first-child {
-           padding-left: 0;
-        }
+.footer__item:nth-child(9) .contact {
+
+    padding-left: unset;
+    text-decoration: underline;
+
+    @media screen and(min-width: 768px) {
+
+        padding-left: 15px;
     }
 }
 
-.footer__menu-helper {
-    .footer__menu-helper-ul {
+.footer__link {
+
+    text-decoration: underline;
+    padding-left: 0;
+
+    @media screen and (min-width: 768px) {
+
+        padding: 0 15px;
+    }
+}
+
+.footer__item:first-child .footer__link {
+
+    padding-left: 0;
+}
+
+.vertical-line {
+
+    display: none;
+
+    @media screen and(min-width: 768px) {
+
+       width: 1px;
+       display: flex;
+       height: 20px;
+       background-color: #ffffff;
+       margin-top: 2.5px;
+    }
+}
+
+.footer__helper-list {
+
         @media screen and (min-width: 768px) {
+
             justify-content: flex-end;
         }
-        li:last-child {
-            padding-right: 0;
-        }
-    }
 }
 
-.copy-right {
+.footer__item:last-child .footer__link {
+
+    padding-right: 0;
+}
+
+.copy__right {
+
     margin-top: 30px;
-    p {
-        color: #ffffff;
-        padding-bottom: 30px;
-    }
+
+}
+
+.copy__right-text{
+
+    color: #ffffff;
+    padding-bottom: 30px;
 }

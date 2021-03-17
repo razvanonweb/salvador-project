@@ -1,32 +1,41 @@
 .flex-center {
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .padding-ul {
-    li {
+
+    li a {
+
         padding: 0 15px;
     }
 }
 
 
 .display__none {
+
     display: none;
+
     @media screen and (min-width: 768px) {
-        display: flex;
+
+        display: inline;
     }
 }
 
 a {
     color: #ffffff;
-    transition: color 0.2s ease-in-out;
+    transition: 0.15s ease-in-out;
+
     &:hover{
-        color: $primary;
+
+        color: $primary-color;
     }
 }
 
 .contact {
+    
     transition: unset;
-    color: $primary !important;
+    color: $primary-color;
 }

@@ -9,10 +9,14 @@
 @import "./variables";
 
 // 
+// Fonts
+// 
+@import "./base/basefonts";
+
+// 
 // Reset
 // 
 @import "./reset";
-
 
 // 
 // Common
@@ -22,6 +26,11 @@
 // 
 // Pages
 // 
-@import ".//pages/Navigation/navigation";
+@import "./pages/Header/header";
 @import "./pages/HomePage/homepage";
+@import "./pages/Hero/hero";
+@import "./pages/OfferSection/offer-section";
+@import "./pages/Slider/slider";
 @import "./pages/Footer/footer";
+@import "./pages/InfoSection/infoSection";
+@import "./pages/QuoteSection/quoteSection";

@@ -1,52 +1,70 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="container-fluid footer">
-      <div className="container-xl p-0 footer__container">
-        <Link to="/" className="footer__container-logo">
+    <div className="container-fluid p-0 footer">
+      <div className="container-xl footer__container">
+        <a href="#" className="footer__container-logo">
           Salvador podcast
-        </Link>
-        <p>“Lorem Ipsum is simply dummy text”</p>
+        </a>
+        <p className="footer-text">“Lorem Ipsum is simply dummy text”</p>
       </div>
-      <div className="container-xl p-0 footer__menu">
+      <div className="container-xl">
         <div className="row">
           <div className="col-md">
-            <ul className="d-flex">
-              <li>
-                <Link to="/prezentare">Prezentare</Link>
+            <ul className="d-flex footer__list">
+              <li className="footer__item">
+                <a className="footer__link" href="#">
+                  Prezentare
+                </a>
               </li>
-              <li>
-                <Link to="/beneficii">Beneficii</Link>
+              <div className="vertical-line"></div>
+              <li className="footer__item">
+                <a className="footer__link" href="#">
+                  Beneficii
+                </a>
               </li>
-              <li>
-                <Link to="/facilitati">Facilitati</Link>
+              <div className="vertical-line"></div>
+              <li className="footer__item">
+                <a className="footer__link" href="#">
+                  Facilitati
+                </a>
               </li>
-              <li>
-                <Link to="/clienti">Clienti</Link>
+              <div className="vertical-line"></div>
+              <li className="footer__item">
+                <a className="footer__link" href="#">
+                  Clienti
+                </a>
               </li>
-              <li>
-                <Link className="contact" to="/contact">
+              <div className="vertical-line"></div>
+              <li className="footer__item">
+                <a className="contact" href="#">
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
-          <div className="col-md footer__menu-helper">
-            <ul className="d-flex padding-ul footer__menu-helper-ul">
-              <li>
-                <Link to="/support">Support</Link>
+          <div className="col-md">
+            <ul className="d-flex footer__helper-list footer__list">
+              <li className="footer__item">
+                <a className="footer__link" href="#">
+                  Support
+                </a>
               </li>
-              <li>
-                <Link to="/faq">FAQ</Link>
+              <div className="vertical-line"></div>
+              <li className="footer__item">
+                <a className="footer__link" href="#">
+                  FAQ
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="container-xl copy-right p-0">
-        <p>© Salvador Podcast · 2021. All rights reserved.</p>
+      <div className="container-xl copy__right">
+        <p className="copy__right-text">
+          © Salvador Podcast · 2021. All rights reserved.
+        </p>
       </div>
     </div>
   );
